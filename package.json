@@ -1,9 +1,11 @@
 {
-  "name": "covid-19",
+  "name": "covid-19-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "bin": "./bin/corona.js",
+  "bin": {
+    "covid19": "./bin/corona.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
