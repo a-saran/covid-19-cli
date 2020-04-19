@@ -1,5 +1,5 @@
 {
-  "name": "covid-19-cli",
+  "name": "covid19-india",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,9 @@
   },
   "keywords": [
     "corona",
-    "cli"
+    "cli",
+    "covid",
+    "covid india"
   ],
   "author": "Saran a",
   "license": "MIT",

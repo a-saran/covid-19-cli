@@ -1,0 +1,1 @@
+CLI tool to real time access to Covid-19 stats for Indian states on your terminal
