@@ -30,11 +30,16 @@ const districtwise = {
       }
     })
 
-    let output= `\n${state('District').red} | ${'confirmed'.red} \n\n`;
+    let total = 0;
+
+    let output= `\n${state('District').red} | ${'confirmed'.red} \n-----------------------------------------------------\n`;
 
     Object.keys(res[key]['districtData']).map(d => {
-      output += `${state(d).yellow} | ${res[key]['districtData'][d]['confirmed']} \n`
+      total += parseInt(res[key]['districtData'][d]['confirmed']);
+      output += `${state(d).yellow} | ${res[key]['districtData'][d]['confirmed']} \n-----------------------------------------------------\n`
     }) 
+
+    console.log(`\nTotal case in ${input.state}: ${total}`.red)
     console.log(output)
   }
 }
